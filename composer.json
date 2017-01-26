@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "jms/serializer": ">=0.11,<=0.14",
         "symfony/event-dispatcher": "3.2.*",
         "symfony/serializer": "3.2.*"
     },
