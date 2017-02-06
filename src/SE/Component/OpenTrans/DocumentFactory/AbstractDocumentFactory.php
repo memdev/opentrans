@@ -10,8 +10,7 @@
 
 namespace SE\Component\OpenTrans\DocumentFactory;
 
-use \SE\Component\OpenTrans\DocumentFactory\DocumentFactoryInterface;
-use \SE\Component\OpenTrans\Node\AbstractNode;
+use SE\Component\OpenTrans\Node\AbstractNode;
 
 /**
  *
@@ -36,9 +35,9 @@ abstract class AbstractDocumentFactory implements DocumentFactoryInterface
 
     /**
      *
-     * @param \SE\Component\OpenTrans\Node\AbstractNode $node
-     * @param array $data
-     * @param array $exclude
+     * @param AbstractNode $node
+     * @param array        $data
+     * @param array        $exclude
      */
     public static function loadScalarArrayData(AbstractNode $node, array $data, array $exclude = array())
     {
