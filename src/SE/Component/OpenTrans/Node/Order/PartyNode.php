@@ -13,13 +13,10 @@ namespace SE\Component\OpenTrans\Node\Order;
 use JMS\Serializer\Annotation as Serializer;
 
 use SE\Component\OpenTrans\Node\AbstractNode;
-use SE\Component\OpenTrans\Node\Order\PartyIdNode;
-use SE\Component\OpenTrans\Node\Order\AddressNode;
 
 /**
- *
  * @package SE\Component\OpenTrans
- * @author Sven Eisenschmidt <sven.eisenschmidt@gmail.com>
+ * @author  Sven Eisenschmidt <sven.eisenschmidt@gmail.com>
  *
  * @Serializer\XmlRoot("PARTY")
  * @Serializer\ExclusionPolicy("all")
@@ -27,28 +24,26 @@ use SE\Component\OpenTrans\Node\Order\AddressNode;
 class PartyNode extends AbstractNode
 {
     /**
-     *
      * @Serializer\Expose
      * @Serializer\SerializedName("PARTY_ID")
      * @Serializer\Type("SE\Component\OpenTrans\Node\Order\PartyIdNode")
      *
-     * @var \SE\Component\OpenTrans\Node\Order\PartyIdNode
+     * @var PartyIdNode
      */
     protected $partyId;
 
     /**
-     *
      * @Serializer\Expose
      * @Serializer\SerializedName("ADDRESS")
      * @Serializer\Type("SE\Component\OpenTrans\Node\Order\AddressNode")
      *
-     * @var \SE\Component\OpenTrans\Node\Order\AddressNode
+     * @var AddressNode
      */
     protected $address;
 
     /**
      *
-     * @param \SE\Component\OpenTrans\Node\Order\PartyIdNode $partyId
+     * @param PartyIdNode $partyId
      */
     public function setPartyId(PartyIdNode $partyId)
     {
@@ -57,7 +52,7 @@ class PartyNode extends AbstractNode
 
     /**
      *
-     * @return string
+     * @return PartyIdNode
      */
     public function getPartyId()
     {
@@ -66,7 +61,7 @@ class PartyNode extends AbstractNode
 
     /**
      *
-     * @param \SE\Component\OpenTrans\Node\Order\AddressNode $address
+     * @param AddressNode $address
      */
     public function setAddress(AddressNode $address)
     {
@@ -75,7 +70,7 @@ class PartyNode extends AbstractNode
 
     /**
      *
-     * @return \SE\Component\OpenTrans\Node\Order\AddressNode
+     * @return AddressNode
      */
     public function getAddress()
     {
